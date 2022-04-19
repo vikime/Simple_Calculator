@@ -1,0 +1,80 @@
+.App {
+  font-family: sans-serif;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+* {
+  margin: 0px;
+  padding: 10px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cyan;
+}
+
+.calci {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(1, 1, 1, 0.2);
+}
+
+.display {
+  padding: 15px;
+  text-align: right;
+  background-color: blue;
+  color: black;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.display span {
+  font-size: 14px;
+  color: greenyellow;
+}
+
+button {
+  appearance: none;
+  outline: none;
+  background-color: honeydew;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.9;
+  background-color: blueviolet;
+  color: crimson;
+}
+
+.operator {
+  display: flex;
+}
+
+.operator button {
+  flex: 1 1 0%;
+  font-weight: 700;
+  background-color: pink;
+  border-radius: 5px;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.33%;
+  border-radius: 5px;
+  max-width: 33.33%;
+}
